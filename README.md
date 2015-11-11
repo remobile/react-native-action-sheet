@@ -39,7 +39,7 @@ module.exports = React.createClass({
             <View style={styles.container}>
                 <Button onPress={this.onOpen}>Photo</Button>
                 <ActionSheet
-                    modalVisible={this.state.show}
+                    visible={this.state.show}
                     onCancel={this.onCancel} >
                     <ActionSheet.Button>Capture</ActionSheet.Button>
                     <ActionSheet.Button>Photo</ActionSheet.Button>
@@ -64,7 +64,7 @@ var styles = StyleSheet.create({
 
 ##ActionSheet
 #### Props
-- `modalVisible : PropTypes.boolean.isRequired` - must use state to control ActionSheet visible
+- `visible : PropTypes.boolean.isRequired` - must use state to control ActionSheet visible
 - `onCancel : PropTypes.func.isRequired` - use to hide ActionSheet
 - `cancelText : PropTypes.string` - default is 'Cancel'
 

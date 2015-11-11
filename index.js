@@ -25,13 +25,13 @@ module.exports =  React.createClass({
     },
     render() {
         return (
-            <Overlay visible={this.props.modalVisible}>
+            <Overlay visible={this.props.visible}>
                 <View style={styles.actionSheetContainer}>
                     <TouchableOpacity
                         style={{flex:1}}
                         onPress={this.props.onCancel}>
                     </TouchableOpacity>
-                    <Sheet visible={this.props.modalVisible}>
+                    <Sheet visible={this.props.visible}>
                         <View style={styles.buttonContainer}>
                             {this.props.children}
                         </View>
