@@ -3,7 +3,7 @@ A pure js ActionSheet like ios ActionSheet, support ios and android
 
 ## Installation
 ```sh
-npm install react-native-action-sheet --save
+npm install @remobile/react-native-action-sheet --save
 ```
 
 ## Usage
@@ -19,8 +19,8 @@ var {
     View,
 } = React;
 
-var ActionSheet = require('react-native-action-sheet');
-var Button = require('react-native-simple-button');
+var ActionSheet = require('@remobile/react-native-action-sheet');
+var Button = require('@remobile/react-native-simple-button');
 
 module.exports = React.createClass({
     getInitialState() {

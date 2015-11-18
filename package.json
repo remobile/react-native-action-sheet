@@ -1,5 +1,5 @@
 {
-    "name": "react-native-action-sheet",
+    "name": "@remobile/react-native-action-sheet",
         "version": "1.0.0",
         "description": "A pure js ActionSheet like ios ActionSheet, support ios and android",
         "main": "index.js",
