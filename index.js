@@ -15,6 +15,7 @@ var {
 
 var Button = require('./button.js');
 var Overlay = require('./overlay.js');
+var ModalActionSheet = require('./modal.js');
 var Sheet = require('./sheet.js');
 
 module.exports =  React.createClass({
@@ -46,6 +47,7 @@ module.exports =  React.createClass({
     },
 });
 module.exports.Button = Button;
+module.exports.ModalActionSheet = ModalActionSheet;
 
 var styles = StyleSheet.create({
     actionSheetContainer: {
