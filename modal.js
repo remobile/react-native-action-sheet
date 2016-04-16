@@ -20,6 +20,7 @@ export default class ModalActionSheet extends React.Component {
   }
 
   show() {
+    console.log('SHOW')
     this.setState({modalVisible: true});
   }
   hide() {
@@ -27,15 +28,7 @@ export default class ModalActionSheet extends React.Component {
     //allow ActionSheet to slide down animation to be seen before hiding modal
 
     setTimeout(() => {
-      this.setState({modalVisible: false}, () => {
-        //If props.onCancel sets this.props.visible === false, this.hide() will be called 2x, but it doesn't really matter, since the sheet is already hidden.
-        //I was tempted to set the onCancel prop of <ActionSheet /> to: onCancel={this.props.onCancel || this.hide.bind(this)}
-        //but I rather just provide stable somewhat imperative behavior where it always closes when you press the Cancel button, whether you provide
-        //onCancel as a prop or not, as it's unknown whether the user will use onCancel to actually toggle the ActionSheet's visibilty or perhaps
-        //only for other application-specific purposes. So this.hide() potentially being called twice is the tradeoff for guaranteeing it closes as user's
-        //still coming from the imperative style will often expect.
-        this.props.onCancel && this.props.onCancel();
-      });
+      this.setState({modalVisible: false});
     }, 300);
   }
 
@@ -50,7 +43,7 @@ export default class ModalActionSheet extends React.Component {
       >
           <ActionSheet
             visible={this.state.sheetVisible}
-            onCancel={this.hide.bind(this)}
+            onCancel={this.props.onCancel}
             cancelText={this.props.cancelText}
           >
             {this.props.children}
