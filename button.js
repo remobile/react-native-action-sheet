@@ -4,8 +4,13 @@
 */
 'use strict'
 
-var React = require('react-native');
-var { StyleSheet, Text, TouchableOpacity, View } = React;
+import React from 'react';
+import {
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
+} from 'react-native';
 
 module.exports = React.createClass({
     render: function() {
