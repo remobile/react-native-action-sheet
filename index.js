@@ -6,16 +6,16 @@
 */
 'use strict';
 
-var React = require('react-native');
-var {
+import React from 'react';
+import {
     StyleSheet,
     TouchableOpacity,
     View,
-} = React;
+} from 'react-native';
 
-var Button = require('./button.js');
-var Overlay = require('./overlay.js');
-var Sheet = require('./sheet.js');
+import Button  from './button.js';
+import Overlay from './overlay.js';
+import Sheet   from './sheet.js';
 
 module.exports =  React.createClass({
     getDefaultProps: function() {
