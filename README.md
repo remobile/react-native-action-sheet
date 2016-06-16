@@ -60,6 +60,7 @@ var styles = StyleSheet.create({
 
 ## Screencasts
 
+![loading](https://github.com/remobile/react-native-action-sheet/blob/master/screencasts/demo.gif)
 
 ##ActionSheet
 #### Props
