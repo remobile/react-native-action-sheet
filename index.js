@@ -6,12 +6,12 @@
 */
 'use strict';
 
-var React = require('react-native');
-var {
+import React from 'react'
+import {
     StyleSheet,
     TouchableOpacity,
     View,
-} = React;
+} from 'react-native'
 
 var Button = require('./button.js');
 var Overlay = require('./overlay.js');
@@ -36,7 +36,7 @@ module.exports =  React.createClass({
                             {this.props.children}
                         </View>
                         <Button
-                            buttonStyle={{marginTop:6, borderRadius:6}}
+                            buttonStyle={{marginTop:6, borderRadius:15}}
                             textStyle={{color:'red'}}
                             onPress={this.props.onCancel}>{this.props.cancelText}</Button>
                     </Sheet>
@@ -53,10 +53,10 @@ var styles = StyleSheet.create({
         padding: 10,
         paddingBottom: 6,
         justifyContent: "flex-end",
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: 'rgba(0, 0, 0, 0.3)',
     },
     buttonContainer: {
-        borderRadius:6,
+        borderRadius: 15,
         overflow: 'hidden',
     }
 });
