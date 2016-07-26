@@ -15,7 +15,6 @@ npm install @remobile/react-native-action-sheet --save
 var React = require('react-native');
 var {
     StyleSheet,
-    TouchableOpacity,
     View,
 } = React;
 
