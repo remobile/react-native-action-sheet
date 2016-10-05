@@ -6,12 +6,12 @@
 */
 'use strict';
 
-var React = require('react-native');
-var {
+import React from 'react';
+import {
     StyleSheet,
     TouchableOpacity,
     View,
-} = React;
+} from 'react-native';
 
 var Button = require('./button.js');
 var Overlay = require('./overlay.js');
