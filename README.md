@@ -12,12 +12,13 @@ npm install @remobile/react-native-action-sheet --save
 ```js
 'use strict';
 
-var React = require('react-native');
+var React = require('react');
+var ReactNative = require('react-native');
 var {
     StyleSheet,
     TouchableOpacity,
     View,
-} = React;
+} = ReactNative;
 
 var ActionSheet = require('@remobile/react-native-action-sheet');
 var Button = require('@remobile/react-native-simple-button');

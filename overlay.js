@@ -4,8 +4,9 @@
 */
 'use strict';
 
-var React = require('react-native');
-var { Animated, StyleSheet, View, Dimensions} = React;
+var React = require('react');
+var ReactNative = require('react-native');
+var { Animated, StyleSheet, View, Dimensions} = ReactNative;
 
 const DEFAULT_ANIMATE_TIME = 300;
 
