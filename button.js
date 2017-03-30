@@ -2,14 +2,14 @@
 * (The MIT License)
 * Copyright (c) 2015-2016 YunJiang.Fang <42550564@qq.com>
 */
-'use strict'
+'use strict';
 
-var React = require('react');
-var ReactNative = require('react-native');
-var { StyleSheet, Text, TouchableOpacity, View } = ReactNative;
+const React = require('react');
+const ReactNative = require('react-native');
+const { StyleSheet, Text, TouchableOpacity, View } = ReactNative;
 
 module.exports = React.createClass({
-    render: function() {
+    render: function () {
         return (
             <TouchableOpacity
                 activeOpacity={0.5}
@@ -20,14 +20,14 @@ module.exports = React.createClass({
                 </Text>
             </TouchableOpacity>
         );
-    }
+    },
 });
 
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
     buttonText: {
         color: '#0069d5',
         alignSelf: 'center',
-        fontSize: 18
+        fontSize: 18,
     },
     button: {
         height: 40,
@@ -35,6 +35,6 @@ var styles = StyleSheet.create({
         borderColor: 'gray',
         borderBottomWidth: 1,
         alignSelf: 'stretch',
-        justifyContent: 'center'
-    }
+        justifyContent: 'center',
+    },
 });
